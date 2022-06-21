@@ -1,3 +1,6 @@
+//
+//BEGINNER CHALLENGES
+//
 /*Challenge 1
 //function that returns he sum of two arguments
 function addition (a,b){
@@ -98,3 +101,21 @@ function booleanInteger(x){
 console.log(booleanInteger(7));
 */
 
+/*Challenge 13
+//if first string = 'LOGGED_IN' and second string = 'SUBSCRIBED' return true, otherwise false
+function isLoggedInAndSubscribed(log, sub) {
+ return (log === "LOGGED_IN" && sub === "SUBSCRIBED");
+}
+console.log(isLoggedInAndSubscribed("LOGGED_IN","SUBSCRIBED"));
+*/
+
+/*Challenge 14
+//if first string = 'LOGGED_IN' or second string = 'SUBSCRIBED' return true, otherwise false
+function isLoggedInAndSubscribed(log, sub) {
+ return (log === "LOGGED_IN" || sub === "SUBSCRIBED");
+}
+console.log(isLoggedInAndSubscribed("LOGGED_IN","SUBSCRIBED"));
+*/
+//
+//MEDIUM CHALLENGES
+//
