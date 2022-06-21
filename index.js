@@ -81,3 +81,20 @@ function calcRemainder(x, y) {
 }
 console.log(calcRemainder(9, 2));
 */
+
+/*Challenge 11
+//return true if odd number
+function isOdd(x){
+return x%2 !== 0;
+}
+console.log(isOdd(8));
+*/
+
+/*Challenge 12
+//if even, return 1, otherwise -1
+function booleanInteger(x){
+    return x%2===0 ? 1 : -1;
+}
+console.log(booleanInteger(7));
+*/
+
