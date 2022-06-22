@@ -275,3 +275,25 @@ function removeApples(arr) {
 }
 console.log(removeApples(["banana", "apple", "orange", "apple"]));
 */
+
+/*Challenge 11
+//filter out falsy values of given array
+function filterOutFlasy(arr) {
+  return arr.filter(elem => !!elem);
+}
+console.log(filterOutFlasy([4, false, 6, "dog", 0, null, "0"]));
+*/
+
+/*Challenge 12
+//return each element in an array to its boolean value
+function covertToBoolean(arr){
+  return arr.map(elem => !!elem);
+}
+console.log(covertToBoolean([500, 0, "", "cat"]));
+*/
+
+//
+//HARD CHALLENGES
+//
+
+//Challenge 1

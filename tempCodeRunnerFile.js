@@ -1,1 +1,1 @@
- zeroArray;
+null
