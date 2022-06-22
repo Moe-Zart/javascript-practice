@@ -1,1 +1,1 @@
-SUBSCRIBED
+ zeroArray;

@@ -221,14 +221,57 @@ function getMax(arr) {
 console.log(getMax([1, 5, 3, 7, 3, 99]));
 */
 
-/*Challenge 8
+/*Challenge 8 My attempt
 //return the reverse of an iputted string
-function reverseString(str){
-let rev = "";
-  for (let i=str.length-1; i>=0;i--){
- rev += str[i];
-}
-return rev;
+function reverseString(str) {
+  let rev = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    rev += str[i];
+  }
+  return rev;
 }
 console.log(reverseString("CowArd"));
+
+//Challenge 8 Better Method
+function reverseString(str) {
+  return str.split("").reverse().join("");
+}
+console.log(reverseString("CowArd"));
+*/
+
+/*Challenge 9 My Attempt
+//turn all elements in inputted array into 0
+function convertToZeros(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    arr[i]=0;
+  }
+  return arr;
+}
+console.log(convertToZeros([4, 7, 2, 6]));
+
+//Challenge 9 Better Method
+function convertToZeros(arr) {
+  return arr.map(elem => 0);
+}
+console.log(convertToZeros([4, 7, 2, 6]));
+*/
+
+/*Challenge 10 My Attempt
+// remove 'apple' element from an array of fruits
+function removeApples(arr) {
+  let noApples = [];
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i] !== "apple") {
+      noApples.push(arr[i]);
+    }
+  }
+  return noApples;
+}
+console.log(removeApples(["banana", "apple", "orange", "apple"]));
+
+//Challenge 10 Better Method
+function removeApples(arr) {
+  return arr.filter((elem) => elem !== "apple"); //return element to arr if not equal to 'apple'
+}
+console.log(removeApples(["banana", "apple", "orange", "apple"]));
 */
