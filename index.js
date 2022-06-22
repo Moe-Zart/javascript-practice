@@ -1,6 +1,7 @@
 //
 //BEGINNER CHALLENGES
 //
+
 /*Challenge 1
 //function that returns he sum of two arguments
 function addition (a,b){
@@ -116,6 +117,93 @@ function isLoggedInAndSubscribed(log, sub) {
 }
 console.log(isLoggedInAndSubscribed("LOGGED_IN","SUBSCRIBED"));
 */
+
 //
 //MEDIUM CHALLENGES
 //
+
+/*Challenge 1
+//return first value if falsy, otherwise return the second one
+function filterOutFalsy(x,y){
+  return !x ? x : y;
+}
+console.log(filterOutFalsy(0,100))
+*/
+
+/*Challenge 2
+//return the lengths of any given array
+function arrLength(arr){
+return arr.length;
+}
+console.log(arrLength([3,5]))
+*/
+
+/*Challenge 3
+//return the last element in an array
+function lastElem(arr) {
+  return arr[arr.length - 1]; //just like if you were to return arr[3], this is arr.length, which is 4 in this case, minus 1 which will give arr[3].
+}
+console.log(lastElem([2, 4, 6, "Ball"]));
+*/
+
+/*Challenge 4
+//return the sum of every element in the array
+function arrSum(arr) {
+  sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum;
+}
+console.log(arrSum([1, 2,3]));
+*/
+
+/*Challenge 5
+//add up all the numbers less than or equal to an iputted number
+function progressiveSum(num){
+  let sum = 0;
+for (let i=1; i<=num; i++){
+sum += i;
+}
+return sum;
+}
+console.log(progressiveSum(3));
+*/
+
+/*
+//Challenge 6 My attempt (Still correct)
+// return mm:ss format for inputted seconds
+function calcTime(sec) {
+  let seconds = sec % 60;
+  let minutes = Math.floor(sec / 60);
+
+  //if minutes<10, + "0"
+  if (minutes < 10) {
+    minutes = "0" + minutes;
+  }
+  if (seconds < 10) {
+    seconds = "0" + seconds;
+  }
+  return minutes + ":" + seconds;
+}
+console.log(calcTime(5));
+
+//Challenge 6 Better Method
+function calcTime(sec) {
+  let seconds = sec % 60;
+  let minutes = Math.floor(sec / 60);
+
+  if (minutes.toString().length === 1) {
+    //here, it is saying that if the minute length is 1 digit, then add the 0.
+    //note: the toString() converts the minutes to string, so that we can use the .length method.
+    minutes = "0" + minutes;
+  }
+  if (seconds.toString().length === 1) {
+    //here, it is saying that if the second length is 1 digit, then add the 0
+    seconds = "0" + seconds;
+  }
+  return minutes + ":" + seconds;
+}
+console.log(calcTime(5));
+*/
+
