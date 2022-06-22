@@ -207,3 +207,28 @@ function calcTime(sec) {
 console.log(calcTime(5));
 */
 
+/*Challenge 7
+//Return the largest number of an inputted array
+function getMax(arr) {
+  let max = arr[0]; //let max equal to the first value of the array
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > max) { 
+      max = arr[i]; //if the next element is bigger than the first value, then make that equal to the new max
+    }
+  }
+  return max;
+}
+console.log(getMax([1, 5, 3, 7, 3, 99]));
+*/
+
+/*Challenge 8
+//return the reverse of an iputted string
+function reverseString(str){
+let rev = "";
+  for (let i=str.length-1; i>=0;i--){
+ rev += str[i];
+}
+return rev;
+}
+console.log(reverseString("CowArd"));
+*/
