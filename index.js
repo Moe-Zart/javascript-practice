@@ -341,8 +341,7 @@ console.log(sortLowToHigh([3, 2, 1, 0]));
 
 /*Challenge 3
 function sortHighToLow(obj) {
-return obj.sort((a,b)=>{
-  return b.price-a.price});
+  return obj.sort((a, b) => b.price - a.price);
 }
 console.log(
   sortHighToLow([
@@ -353,3 +352,5 @@ console.log(
   ])
 );
 */
+
+//Challenge 4
