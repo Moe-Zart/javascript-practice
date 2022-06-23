@@ -329,3 +329,27 @@ function showRating(inpRating) {
 }
 console.log(showRating(5));
 */
+
+//return the prices sorted by low to high
+
+/*Challenge 2
+function sortLowToHigh(arr) {
+  return arr.sort((a,b) => a-b);
+}
+console.log(sortLowToHigh([3, 2, 1, 0]));
+*/
+
+/*Challenge 3
+function sortHighToLow(obj) {
+return obj.sort((a,b)=>{
+  return b.price-a.price});
+}
+console.log(
+  sortHighToLow([
+    { id: 1, price: 50 },
+    { id: 2, price: 30 },
+    { id: 3, price: 60 },
+    { id: 4, price: 10 },
+  ])
+);
+*/

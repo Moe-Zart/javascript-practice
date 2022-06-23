@@ -1,1 +1,1 @@
-null
+arr[i] = arr[0];
