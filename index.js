@@ -296,4 +296,36 @@ console.log(covertToBoolean([500, 0, "", "cat"]));
 //HARD CHALLENGES
 //
 
-//Challenge 1
+/*Challenge 1 My Attempt
+//display a * for each inputted full rating and a . for each half rating
+function showRating(inpRating) {
+  let arr = [];
+  for (let i = 0; i < Math.floor(inpRating); i++) {
+    arr += "*";
+    if (i != Math.floor(inpRating)) {
+      arr += " ";
+    }
+  }
+  if (inpRating !== Math.floor(inpRating)) {
+    return arr + ".";
+  }
+  return arr;
+}
+console.log(showRating(5));
+
+//Challenge 1 Better Method
+function showRating(inpRating) {
+  let arr = [];
+  for (let i = 0; i < Math.floor(inpRating); i++) {
+    arr += "*";
+    if (i != Math.floor(inpRating)) {
+      arr += " ";
+    }
+  }
+  if (!Number.isInteger(inpRating)) {
+    return arr + ".";
+  }
+  return arr;
+}
+console.log(showRating(5));
+*/
