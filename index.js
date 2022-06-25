@@ -386,3 +386,16 @@ async function postsByUser(userId) {  //async goes next to the function where u 
     }
 postsByUser(4);
 */
+
+/*Challenge 6
+//
+async function firstSixIncomplete(){
+  const promise = await fetch ("https://jsonplaceholder.typicode.com/todos");
+  const result = await promise.json();
+ 
+
+  const incompleted = result.filter(elem => !elem.completed).slice(0,6);
+  console.log(incompleted);
+}
+firstSixIncomplete();
+*/
