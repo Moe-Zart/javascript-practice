@@ -353,4 +353,36 @@ console.log(
 );
 */
 
-//Challenge 4
+/*Challenge 4 + 5
+
+//json is a common way of sending data from a server to our browser
+
+//allows updates without actually clicking on something. dynamic data sends request to a server and 
+//the server gets back the information from a format called json, in which whe parse into javascript 
+//code usable code and update the information on the screen
+
+//synchronous javascript code
+//where javascript functions are executed in the sequence they are called.
+//e.g all the normal functions you have executed
+
+
+//asynchronous code
+
+async function postsByUser(userId) {  //async goes next to the function where u want to control asynchronous code
+  const promise = await fetch ("https://jsonplaceholder.typicode.com/posts"); // fetch returns you a promise. therefore you need .then
+  const result = await promise.json(); //the await above goes next to the promise you want to wait for.
+//the .json above also returns you a promise, so u need to await it
+
+//the once the await functions above are finished processing, we are now able to filter through the json
+
+
+      //before filtering through to just get userId 4, you have to identify what the elements of the 
+      //array are. Looking through the json, you can see that the elements are objects and the userId
+      //is the property of each object. so to call the userId, you do element.userId and make it equal
+      //to the inputted userId
+      const posts = result.filter(elem => elem.userId === userId);
+      console.log(posts);
+      
+    }
+postsByUser(4);
+*/
